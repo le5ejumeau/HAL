@@ -5,6 +5,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAL.Library", "HAL.Library\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAL.Test", "HAL.Test\HAL.Test.csproj", "{F7344C12-2405-4366-958F-3E7674DFE10C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAL.IU", "HAL.IU\HAL.IU.csproj", "{82C3D26A-C4D0-4272-9CB5-8596C7096403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAL.ServiceWeb", "HAL.ServiceWeb\HAL.ServiceWeb.csproj", "{3FB48CFC-E18C-4191-9F15-18D483D334FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HAL.SimulateurPI", "HAL.SimulateurPI\HAL.SimulateurPI.csproj", "{5381E3B6-83F9-4402-B49D-0619C33BE62E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3FB48CFC-E18C-4191-9F15-18D483D334FB} = {3FB48CFC-E18C-4191-9F15-18D483D334FB}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +28,18 @@ Global
 		{F7344C12-2405-4366-958F-3E7674DFE10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7344C12-2405-4366-958F-3E7674DFE10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7344C12-2405-4366-958F-3E7674DFE10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C3D26A-C4D0-4272-9CB5-8596C7096403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C3D26A-C4D0-4272-9CB5-8596C7096403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C3D26A-C4D0-4272-9CB5-8596C7096403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C3D26A-C4D0-4272-9CB5-8596C7096403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB48CFC-E18C-4191-9F15-18D483D334FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB48CFC-E18C-4191-9F15-18D483D334FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB48CFC-E18C-4191-9F15-18D483D334FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB48CFC-E18C-4191-9F15-18D483D334FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5381E3B6-83F9-4402-B49D-0619C33BE62E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5381E3B6-83F9-4402-B49D-0619C33BE62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5381E3B6-83F9-4402-B49D-0619C33BE62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5381E3B6-83F9-4402-B49D-0619C33BE62E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
