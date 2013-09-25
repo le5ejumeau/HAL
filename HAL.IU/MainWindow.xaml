@@ -1,0 +1,25 @@
+﻿<Controls:MetroWindow x:Class="HAL.IU.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="MainWindow" Height="350" Width="525" WindowState="Maximized">
+    <DockPanel LastChildFill="True">
+
+        <ListBox  ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding Serveurs}" SelectedItem="{Binding Path=SelectedServeur, Mode=TwoWay}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Foreground="{StaticResource Foreground}" FontSize="30">Rocket 1</TextBlock>
+                        <TextBlock Foreground="{StaticResource Foreground}" FontSize="16">Status: IO</TextBlock>
+                        <TextBlock Foreground="{StaticResource Foreground}" FontSize="16">Fire rate: 2ms</TextBlock>
+                        <TextBlock Foreground="{StaticResource Foreground}" FontSize="16">Ammo: 455/455</TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid>
+
+        </Grid>
+    </DockPanel>
+</Controls:MetroWindow>
