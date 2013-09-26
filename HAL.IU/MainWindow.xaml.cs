@@ -26,6 +26,14 @@ namespace HAL.IU
         {
             InitializeComponent();
             this.DataContext = new MainViewModel();
+
+            Random r = new Random();
+            InitializeComponent();
+            for (int i = 0; i < 20; i++)
+            {
+                myList.Items.Add(new { Name = "Name : BlaBla blabl ablabl abla blla bla bla ll", Online = Convert.ToBoolean(r.Next(-1, 1)), Name2 = "Name 2 : BlaBla blabl ablabl abla blla bla bla ll" });
+            }
+          
         }
     }
 }

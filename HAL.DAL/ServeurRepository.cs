@@ -10,8 +10,15 @@ using HAL.DAL.Utils;
 
 namespace HAL.DAL
 {
+    /// <summary>
+    /// Gestion des sauvegarde et restauration de l'object Client. 
+    /// </summary>
     public class ServeurRepository : DataUtils
     {
+        /// <summary>
+        /// Sauvegade de tous les serveurs
+        /// </summary>
+        /// <param name="serveurs">Liste des serveurs à sauvegarde</param>
         public void Save(Serveurs serveurs)
         {
             SQLiteConnection connexion = GetConnection;
@@ -33,6 +40,10 @@ namespace HAL.DAL
 
         }
 
+        /// <summary>
+        /// Chargement des serveurs
+        /// </summary>
+        /// <param name="serveurs">Liste des serveurs à sauvegarde</param>
         public void LoadAll(out Serveurs serveurs)
         {
             serveurs = new Serveurs();

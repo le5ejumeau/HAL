@@ -35,7 +35,7 @@ namespace HAL.IU.ViewModel
             set
             {
                 _selectedServeur = value;
-                OnPropertyChanged("OpeningNumber");
+                OnPropertyChanged("SelectedServeur");
             }
         }
     }

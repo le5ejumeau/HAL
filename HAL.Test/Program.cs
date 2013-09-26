@@ -21,11 +21,16 @@ namespace HAL.Test
         static void Main(string[] args)
         {
 
-            //ServeurRepository b = new ServeurRepository();
-            //Serveurs serveurs = new Serveurs();
-            //serveurs.Add(new Serveur("192.168.1.5"));
-            //serveurs.Add(new Serveur("192.168.1.10"));
-            //b.Save(serveurs);
+            ServeurRepository b = new ServeurRepository();
+            Serveurs serveurs = new Serveurs();
+            serveurs.Add(new Serveur("192.168.1.5"));
+            serveurs.Add(new Serveur("192.168.1.10"));
+            Int32 i = 0;
+            foreach (var item in serveurs)
+            {
+                item.Name = "Nom : " + (++i).ToString();   
+            }
+            b.Save(serveurs);
 
             //b.LoadAll(out serveurs);
           
